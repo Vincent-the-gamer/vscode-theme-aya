@@ -45,6 +45,11 @@
         "label": "Aya Light",
         "uiTheme": "vs",
         "path": "./themes/aya-light.json"
+      },
+      {
+        "label": "Aya Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/aya-dark.json"
       }
     ]
   },
