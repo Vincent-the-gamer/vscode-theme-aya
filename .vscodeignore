@@ -3,3 +3,7 @@ node_modules
 test
 .github
 .vscode
+.vscode/**
+.vscode-test/**
+.gitignore
+vsc-extension-quickstart.md

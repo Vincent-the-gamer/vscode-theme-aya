@@ -29,7 +29,7 @@
     "Themes"
   ],
   "main": "./dist/index.js",
-  "icon": "res/icon.png",
+  "icon": "resources/icon.png",
   "files": [
     "dist"
   ],
@@ -37,7 +37,9 @@
     "vscode": "^1.89.0"
   },
   "activationEvents": [
-    "onStartupFinished"
+    "onCommand:aya.installAya",
+    "onCommand:aya.uninstallAya",
+    "onCommand:aya.updateAya"
   ],
   "contributes": {
     "themes": [
@@ -51,12 +53,47 @@
         "uiTheme": "vs-dark",
         "path": "./themes/aya-dark.json"
       }
-    ]
+    ],
+    "commands": [
+      {
+        "command": "aya.installAya",
+        "title": "Enable Aya Bladelight"
+      },
+      {
+        "command": "aya.uninstallAya",
+        "title": "Disable Aya Bladelight"
+      },
+      {
+        "command": "aya.updateAya",
+        "title": "Reload Aya Bladelight"
+      }
+    ],
+    "configuration": {
+      "title": "Aya Bladelight Configuration",
+      "properties": {
+        "aya.imports": {
+          "description": "CSS/JS files, as an array of URLs, not file paths",
+          "type": "array",
+          "default": []
+        },
+        "aya.statusbar": {
+          "description": "Enable Status Indicator",
+          "type": "boolean",
+          "default": true
+        },
+        "aya.staging_dir": {
+          "description": "Directory used for storing staged CSS/JS files. Must be inside VSCode's extension directory, otherwise VSCode will refuse to load the your custom CSS/JS.",
+          "type": "string",
+          "default": ""
+        }
+      }
+    }
   },
   "scripts": {
+    "login:vsce": "vsce login",
+    "logout:vsce": "vsce logout",
+    "login:npm": "pnpm login --registry https://registry.npmjs.com",
     "build": "tsup src/index.ts --external vscode",
-    "dev": "pnpm run build --watch",
-    "vscode:prepublish": "pnpm run build",
     "publish": "vsce publish",
     "pack": "vsce package",
     "dep": "taze major"
@@ -68,5 +105,10 @@
     "taze": "^0.13.8",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "file-url": "^4.0.0",
+    "node-fetch": "^2.7.0",
+    "uuid": "^9.0.1"
   }
 }
