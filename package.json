@@ -1,0 +1,67 @@
+{
+  "publisher": "Vincent-the-gamer",
+  "name": "aya",
+  "displayName": "Aya",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "author": "Vincent-the-gamer",
+  "license": "MIT",
+  "funding": "https://afdian.net/a/vince-g",
+  "homepage": "https://github.com/Vincent-the-gamer/vscode-theme-aya#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vincent-the-gamer/vscode-theme-aya"
+  },
+  "bugs": {
+    "url": "https://github.com/Vincent-the-gamer/vscode-theme-aya/issues"
+  },
+  "keywords": [
+    "aya",
+    "senren banka",
+    "murasame",
+    "theme"
+  ],
+  "sponsor": {
+    "url": "https://afdian.net/a/vince-g"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "main": "./dist/index.js",
+  "icon": "res/icon.png",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Aya Light",
+        "uiTheme": "vs",
+        "path": "./themes/aya-light.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --external vscode",
+    "dev": "pnpm run build --watch",
+    "vscode:prepublish": "pnpm run build",
+    "publish": "vsce publish",
+    "pack": "vsce package",
+    "dep": "taze major"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@types/vscode": "^1.89.0",
+    "@vscode/vsce": "^2.26.1",
+    "taze": "^0.13.8",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  }
+}
