@@ -20,6 +20,12 @@
 ## Note
 Work in progress.
 
+## Add a background image
+Please use [Background](https://github.com/shalldie/vscode-background) extension.
+
+## Early Preview
+![preview](./.github/preview.png)
+
 ## License
 
 [MIT](./LICENSE) License © 2024 [Vincent-the-gamer](https://github.com/Vincent-the-gamer)

@@ -6,6 +6,7 @@ to open html inspector.
 
 then find CSS classes to edit.
 */
+
 .mtk8,
 .mtk9,
 .mtk3,
@@ -51,7 +52,7 @@ then find CSS classes to edit.
   }
 
   50% {
-    box-shadow: 0 0 85px 0 rgba(0, 255, 17, 0.792);
+    box-shadow: 0 0 85px 0 rgba(255, 247, 0, 0.792);
   }
 
   100% {
