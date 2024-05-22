@@ -1,5 +1,5 @@
 {
-  "publisher": "Vincent-the-gamer",
+  "publisher": "vincent-the-gamer",
   "name": "aya",
   "displayName": "Aya",
   "version": "0.1.0",
@@ -90,7 +90,7 @@
     }
   },
   "scripts": {
-    "login:vsce": "vsce login",
+    "login:vsce": "vsce login publisher vincent-the-gamer",
     "logout:vsce": "vsce logout",
     "login:npm": "pnpm login --registry https://registry.npmjs.com",
     "build": "tsup src/index.ts --external vscode",
