@@ -1,12 +1,25 @@
-/* hover flip specials */
+/* 
+PS: pressing 
+  - ctrl + alt + I 
+  - command + option + I
+to open html inspector.
+
+then find CSS classes to edit.
+*/
 .mtk8,
 .mtk9,
 .mtk3,
 .mtk6,
 .mtk7,
-.mtk10 {
+.mtk10,
+.mtk12 {
   display: inline-block;
   transition: .4s transform;
+}
+
+.mtk12{
+  color: #CF4200;
+  text-shadow: 0 0 15px #CF4200;
 }
 
 .mtk8:hover,
@@ -19,12 +32,8 @@
   transform: scale(1.2);
 }
 
-/* end of hover flip specials */
-
-/* tooltips */
-
 .monaco-editor .monaco-hover {
-  background-color: #262335;
+  background-color: #aeffdf;
   display: block !important;
   padding: 20px;
   transition: opacity 1s !important;
@@ -42,7 +51,7 @@
   }
 
   50% {
-    box-shadow: 0 0 85px 0 rgba(123, 255, 131, 0.6);
+    box-shadow: 0 0 85px 0 rgba(0, 255, 17, 0.792);
   }
 
   100% {
@@ -59,7 +68,7 @@
   height: 4px;
   background-size: 200% 200%;
   width: 100%;
-  background-image: linear-gradient(to right, #fc28a8, #cd00ff, #001bff, #cd00ff, #fc28a8);
+  background-image: linear-gradient(to right, #44ff00, cyan, #f671ff, #FF92C7, #FF8F00);
 
   animation: neonline 2s infinite;
 }
@@ -75,8 +84,8 @@
 }
 
 .monaco-editor .selected-text {
-  background-color: #000000aa !important;
-  box-shadow: 0 0 35px 5px #ff008d55;
+  background-color: #56F0FF50 !important;
+  box-shadow: 0 0 10px 5px #FCFFBE50;
   color: #fff !important;
 }
 
@@ -179,8 +188,8 @@
 
 .mtk3,
 .mtk6 {
-  color: cyan;
-  text-shadow: 0 0 20px cyan;
+  color: red;
+  text-shadow: 0 0 20px red;
 }
 
 .mtk3.mtki {
@@ -192,25 +201,54 @@
 .mtk5,
 .mtk11,
 .mtk14 {
-  color: #ff008b;
+  color: #ff67bb;
 }
 
-.mtk8,
+
+.mtk8 {
+  color: #7d00c5;
+  text-shadow: 0 0 5px #e3b1ff, 0 0 10px #e3b1ff, 0 0 15px #e3b1ff;
+  font-style: italic;
+}
+
 .mtk9 {
-  color: rgb(239, 231, 231);
-  text-shadow: 0 0 2px #100c0f, 0 0 3px #ff8ec8a3, 0 0 5px #ff0084, 0 0 10px #ff0084, 0 0 15px #ff0084;
   font-style: italic;
+  color: #FF7800;
+  text-shadow: 0 0 1px #ffbee3, 0 0 3px #ffbee3;
 }
 
-.mtk7,
-.mtk10 {
-  color: #fc199a;
-  text-shadow: 0 0 2px #393a33, 0 0 35px #ffffff44, 0 0 10px #fc199a, 0 0 2px #fc199a;
+.mtk7 {
+  color: green;
+  text-shadow: 0 0 5px greenyellow, 0 0 10px greenyellow, 0 0 15px cyan;
 }
 
+
 .mtk10 {
-  font-style: italic;
+  color: #FF7800;
+  text-shadow: 0 0 1px #ffbee3, 0 0 3px #ffbee3;
 }
+
+.mtk20 {
+  color: #00B27C;
+  text-shadow: 0 0 5px greenyellow, 0 0 10px greenyellow;
+}
+
+.monaco-editor .bracket-highlighting-0 {
+  color: #2993a3;
+  text-shadow: 0 0 5px #2993a3, 0 0 10px turquoise;
+}
+
+
+.monaco-editor .bracket-highlighting-1 {
+  color: #1e754f;
+  text-shadow: 0 0 5px green, 0 0 10px greenyellow;
+}
+
+.monaco-editor .bracket-highlighting-2 {
+  color: #a65e2b;
+  text-shadow: 0 0 5px #a65e2b, 0 0 10px brown;
+}
+
 
 .monaco-editor .margin,
 .monaco-editor-background,
@@ -271,7 +309,6 @@ canvas {
   z-index: 1;
 }
 
-/* Sweet sunset dots */
 .monaco-workbench .activitybar>.content .monaco-action-bar .badge .badge-content {
   background: linear-gradient(to bottom, #fff951 25%, #fc28a8);
 }
@@ -286,12 +323,6 @@ canvas {
   transition: opacity 1s;
   opacity: 0;
 }
-
-/* Active sidebar item */
-/* .monaco-workbench .activitybar>.content .monaco-action-bar .action-item.checked {
-  box-shadow: inset 0 -5px 25px #c70077ae;
-  position: relative;
-} */
 
 .monaco-workbench .activitybar>.content .monaco-action-bar .action-item.checked::after {
   content: '';
@@ -329,7 +360,7 @@ canvas {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(to right, #fc28a8, #0000ff) !important;
+  background: linear-gradient(to right, #ffc6e8, #83FF6C) !important;
 }
 
 /* update lightbulb to be neon */
@@ -349,20 +380,6 @@ canvas {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* .monaco-editor .line-numbers {
-  color: #8a2dc066;
-  text-shadow: 0 0 2px #393a33, 0 0 35px #ffffff44, 0 0 10px #8a2dc066, 0 0 2px #8a2dc066;
-} */
-
-/* .monaco-list .monaco-list-rows {
-  background: rgb(48, 0, 71) !important;
-} */
-
-/* .monaco-list-row.focused,
-.monaco-list-row.selected {
-  background-color: #8a2dc033 !important;
-} */
-
 .explorer-folders-view span[title~="emphasized"],
 .monaco-icon-label[title~="emphasized"]::after {
   color: #fc199a;
@@ -374,6 +391,6 @@ canvas {
 }
 
 .vs-dark .monaco-scrollable-element>.scrollbar>.slider {
-  background: rgb(153, 99, 255);
+  background: rgb(216, 195, 255);
   opacity: 0.5;
 }
