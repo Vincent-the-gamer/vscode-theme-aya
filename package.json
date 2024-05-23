@@ -2,9 +2,8 @@
   "publisher": "vincent-the-gamer",
   "name": "aya",
   "displayName": "Aya",
-  "version": "0.1.0",
-  "private": true,
-  "description": "",
+  "version": "0.1.1",
+  "description": "Murasame-style VSCode Theme.",
   "author": "Vincent-the-gamer",
   "license": "MIT",
   "funding": "https://afdian.net/a/vince-g",
@@ -29,18 +28,15 @@
     "Themes"
   ],
   "main": "./dist/index.js",
-  "icon": "resources/icon.png",
-  "files": [
-    "dist"
-  ],
-  "engines": {
-    "vscode": "^1.89.0"
-  },
   "activationEvents": [
     "onCommand:aya.installAya",
     "onCommand:aya.uninstallAya",
     "onCommand:aya.updateAya"
   ],
+  "icon": "resources/icon.png",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
   "contributes": {
     "themes": [
       {
@@ -93,15 +89,15 @@
     "login:vsce": "vsce login vincent-the-gamer",
     "logout:vsce": "vsce logout",
     "login:npm": "pnpm login --registry https://registry.npmjs.com",
-    "build": "tsup src/index.ts --external vscode",
+    "build": "tsup",
     "publish": "vsce publish",
     "pack": "vsce package",
-    "dep": "taze major"
+    "dep": "taze"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
     "@types/vscode": "^1.89.0",
-    "@vscode/vsce": "^2.26.1",
+    "@vscode/vsce": "^2.25.0",
     "taze": "^0.13.8",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"

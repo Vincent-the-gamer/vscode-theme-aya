@@ -320,7 +320,7 @@ canvas {
 }
 
 .monaco-workbench .activitybar>.content .monaco-action-bar .badge .badge-content {
-  background: linear-gradient(to bottom, #fff951 25%, #fc28a8);
+  background: linear-gradient(to bottom, #51ffc2 25%, #7d28fc);
 }
 
 .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.sizing-fit::after {
