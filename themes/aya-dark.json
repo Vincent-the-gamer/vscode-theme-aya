@@ -4,7 +4,7 @@
   "colors": {
     "focusBorder": "#00000000",
     "foreground": "#000000",
-    "descriptionForeground": "#f0f0f0",
+    "descriptionForeground": "#007CFF",
     "errorForeground": "#ab5959",
     "textLink.foreground": "#2EC0FF",
     "textLink.activeForeground": "#A4FE8F",
@@ -305,7 +305,7 @@
         "storage.type.java"
       ],
       "settings": {
-        "foreground": "#dbd7caee"
+        "foreground": "#FF8F00"
       }
     },
     {
