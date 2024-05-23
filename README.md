@@ -29,7 +29,7 @@ She is generally called Murasame in the game, Aya is her real name.
 ## Aya Bladelight
 This extension has bundled [Custom CSS and JS Loader](https://github.com/be5invis/vscode-custom-css). So you can simply get the glow effect in preview, just follow these steps:
 
-1. Setup the path to `bladelight.css`
+1. Setup the path to `bladelight.css` in `settings.json`.
 
 > [!WARNING]
 > `file://` is required!!!!
