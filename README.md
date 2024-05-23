@@ -5,6 +5,10 @@
 <h1 align="center">VSCode Theme Aya</h1>
 
 <p align="center">
+    Murasame-style VSCode theme.
+</p>
+
+<p align="center">
     <b>
         <i>
             Aya is always with you. （づ￣3￣）づ╭❤～
@@ -17,14 +21,57 @@
 </p>
 
 
-## Note
-Work in progress.
+## Description
+[Aya(Murasame)](https://senren.nekonyansoft.com/chara.html) is one of the main characters in game [「Senren * Banka」](https://store.steampowered.com/app/1144400/SenrenBanka/).
+
+She is generally called Murasame in the game, Aya is her real name.
+
+## Aya Bladelight
+This extension has bundled [Custom CSS and JS Loader](https://github.com/be5invis/vscode-custom-css). So you can simply get the glow effect in preview, just follow these steps:
+
+1. Setup the path to `bladelight.css`
+
+> [!WARNING]
+> `file://` is required!!!!
+
+macOS:
+
+```json
+"aya.imports": [
+    "file:///Users/{USER_NAME}/.vscode/extensions/vincent-the-gamer.aya-{plugin-version}/bladelight.css"
+],
+```
+
+Windows: 
+```json
+"aya.imports": [
+    "file://C:/Users/{USER_NAME}/.vscode/extensions/vincent-the-gamer.aya-{plugin-version}/bladelight.css"
+],
+```
+
+Linux:
+
+```json
+"aya.imports": [
+    "file:///home/{USER_NAME}/.vscode/extensions/vincent-the-gamer.aya-{plugin-version}/bladelight.css"
+],
+```
+
+2. Run `Enable Aya Bladelight`.
+- `Ctrl + Shift + P` or `Command + Shift + P`
+- Input `enable aya bladelight`
+- P.S. Disable it by running `Disable Aya Bladelight`
+
+And happy hacking~~~ ☆´∀｀☆
 
 ## Add a background image
 Please use [Background](https://github.com/shalldie/vscode-background) extension.
 
-## Early Preview
+## Preview
+Enable Aya Bladelight to get the glow effect and custom logo.
+
 ![preview](./.github/preview.png)
+![preview2](./.github/preview-2.png)
 
 ## License
 
