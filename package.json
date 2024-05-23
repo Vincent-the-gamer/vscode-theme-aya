@@ -87,7 +87,7 @@
   },
   "scripts": {
     "login:vsce": "vsce login vincent-the-gamer",
-    "logout:vsce": "vsce logout",
+    "logout:vsce": "vsce logout vincent-the-gamer",
     "login:npm": "pnpm login --registry https://registry.npmjs.com",
     "build": "tsup",
     "publish": "vsce publish",
