@@ -90,7 +90,7 @@
     }
   },
   "scripts": {
-    "login:vsce": "vsce login publisher vincent-the-gamer",
+    "login:vsce": "vsce login vincent-the-gamer",
     "logout:vsce": "vsce logout",
     "login:npm": "pnpm login --registry https://registry.npmjs.com",
     "build": "tsup src/index.ts --external vscode",
