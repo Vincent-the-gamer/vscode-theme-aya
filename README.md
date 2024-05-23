@@ -22,9 +22,9 @@
 
 
 ## Description
-[Aya(Murasame)](https://senren.nekonyansoft.com/chara.html) is one of the main characters in game [「Senren * Banka」](https://store.steampowered.com/app/1144400/SenrenBanka/).
+[Aya(綾)](https://senren.nekonyansoft.com/chara.html) is one of the main characters in game [「Senren * Banka」](https://store.steampowered.com/app/1144400/SenrenBanka/).
 
-She is generally called Murasame in the game, Aya is her real name.
+She is generally called Murasame(ムラサメ) in the game, Aya(綾) is her real name.
 
 ## Aya Bladelight
 This extension has bundled [Custom CSS and JS Loader](https://github.com/be5invis/vscode-custom-css). So you can simply get the glow effect and new startup logo showed in preview, just follow these steps:
@@ -66,6 +66,37 @@ And happy hacking~~~ ☆´∀｀☆
 
 ## Add a background image
 Please use [Background](https://github.com/shalldie/vscode-background) extension.
+
+Download pic from the top of this document, then add these codes to `settings.json`.
+```json
+"background.fullscreen": {
+    "images": ["file:///path/to/pic"],
+    "opacity": 0.91,
+    "size": "cover",
+    "position": "center",
+    "interval": 0
+},
+"background.style": {
+    "background-position": "100% 100%",
+    "background-size": "cover",
+    "opacity": 0.18
+},
+"background.customImages": [
+    "file:///path/to/pic"
+],
+```
+
+Additionally, avoid your comment color to be green-like.
+```json
+"editor.tokenColorCustomizations": {
+    "comments": {
+        "foreground": "#856cff",
+        "fontStyle": "bold"
+    }
+},
+```
+
+Then your Code will look like my preview pic.
 
 ## Preview
 Enable Aya Bladelight to get the glow effect and custom logo.
