@@ -7,6 +7,15 @@ to open html inspector.
 then find CSS classes to edit.
 */
 
+/* Replace VSCode Logo */
+.editor-group-watermark > .letterpress {
+  background-image: url("https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/VSCode/VSCode.png") !important;
+  opacity: 0.75;
+  overflow: visible;
+  filter: none;
+  transform: scale(1.5, 1.5);
+}
+
 .mtk8,
 .mtk9,
 .mtk3,
