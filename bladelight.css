@@ -198,8 +198,11 @@ then find CSS classes to edit.
 
 .mtk3,
 .mtk6 {
-  color: red;
-  text-shadow: 0 0 20px red;
+  background-image: linear-gradient(to right, red, rgb(192, 124, 0), rgb(2, 149, 149), rgb(0, 73, 191));
+	color: transparent;
+  background-clip: text;
+	-webkit-background-clip: text;
+  text-shadow: 0 0 20px violet;
 }
 
 .mtk3.mtki {
@@ -216,8 +219,11 @@ then find CSS classes to edit.
 
 
 .mtk8 {
-  color: #7d00c5;
-  text-shadow: 0 0 5px #e3b1ff, 0 0 10px #e3b1ff, 0 0 15px #e3b1ff;
+  background-image: linear-gradient(to right, #12006d, #650081, #be012d, #01596c);
+	color: transparent;
+  background-clip: text;
+	-webkit-background-clip: text;
+  text-shadow: 0 0 5px #dea5ff, 0 0 10px #dea5ff, 0 0 15px #dea5ff;
   font-style: italic;
 }
 
@@ -227,8 +233,11 @@ then find CSS classes to edit.
 }
 
 .mtk7 {
-  color: green;
-  text-shadow: 0 0 5px greenyellow, 0 0 10px greenyellow, 0 0 15px cyan;
+  background-image: linear-gradient(to right, rgb(31, 99, 0), rgb(0, 94, 91), rgb(0, 42, 255), rgb(119, 0, 255));
+	color: transparent;
+  background-clip: text;
+	-webkit-background-clip: text;
+  text-shadow: 0 0 5px rgb(0, 230, 27), 0 0 10px rgb(62, 255, 75), 0 0 15px rgb(46, 255, 199);
 }
 
 
