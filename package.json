@@ -2,7 +2,7 @@
   "publisher": "vincent-the-gamer",
   "name": "aya",
   "displayName": "Aya",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Murasame-style VSCode Theme.",
   "author": "Vincent-the-gamer",
   "license": "MIT",
@@ -27,14 +27,9 @@
     "Themes"
   ],
   "main": "./dist/index.js",
-  "activationEvents": [
-    "onCommand:aya.installAya",
-    "onCommand:aya.uninstallAya",
-    "onCommand:aya.updateAya"
-  ],
   "icon": "resources/icon.png",
   "engines": {
-    "vscode": "^1.93.0"
+    "vscode": "^1.94.0"
   },
   "contributes": {
     "themes": [
@@ -94,10 +89,10 @@
     "dep": "taze major"
   },
   "devDependencies": {
-    "@types/node": "^22.5.5",
-    "@types/vscode": "^1.93.0",
-    "@vscode/vsce": "^3.1.0",
-    "taze": "^0.16.9",
+    "@types/node": "^22.7.4",
+    "@types/vscode": "^1.94.0",
+    "@vscode/vsce": "^3.1.1",
+    "taze": "^0.17.2",
     "tsup": "^8.3.0",
     "typescript": "^5.6.2"
   },

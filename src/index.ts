@@ -24,11 +24,16 @@ function isVSCodeBelowVersion(version: string) {
 
 export function activate(this: any, context: vscode.ExtensionContext) {
 	this.extensionName = 'vincent-the-gamer.aya';
-	const appDir = path.dirname(process.mainModule!.filename);
+	const appDir = require.main
+		? path.dirname(require.main.filename)
+		: globalThis._VSCODE_FILE_ROOT
 	const isWin = /^win/.test(process.platform);
 	const base = appDir + (isWin ? "\\vs\\code" : "/vs/code");
 	const electronBase = isVSCodeBelowVersion("1.70.0") ? "electron-browser" : "electron-sandbox";
-	const htmlFile = path.join(base, electronBase, "workbench", "workbench.html");
+	let htmlFile = path.join(base, "electron-sandbox", "workbench", "workbench.html");
+	if (!fs.existsSync(htmlFile)) {
+		htmlFile = path.join(base, "electron-sandbox", "workbench", "workbench.esm.html");
+	}
 	const BackupFilePath = (uuid: any) =>
 		path.join(base, electronBase, "workbench", `workbench.${uuid}.bak-aya`);
 
