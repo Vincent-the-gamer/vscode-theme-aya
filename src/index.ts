@@ -24,9 +24,11 @@ function isVSCodeBelowVersion(version: string) {
 
 export function activate(this: any, context: vscode.ExtensionContext) {
 	this.extensionName = 'vincent-the-gamer.aya';
+	// @ts-expect-error
+	let _VSCODE_FILE_ROOT = globalThis._VSCODE_FILE_ROOT
 	const appDir = require.main
 		? path.dirname(require.main.filename)
-		: globalThis._VSCODE_FILE_ROOT
+		: _VSCODE_FILE_ROOT
 	const isWin = /^win/.test(process.platform);
 	const base = appDir + (isWin ? "\\vs\\code" : "/vs/code");
 	const electronBase = isVSCodeBelowVersion("1.70.0") ? "electron-browser" : "electron-sandbox";
