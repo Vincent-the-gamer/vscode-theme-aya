@@ -70,20 +70,17 @@ Please use [Background](https://github.com/shalldie/vscode-background) extension
 Download pic from the top of this document, then add these codes to `settings.json`.
 ```json
 "background.fullscreen": {
-    "images": ["file:///path/to/pic"],
+    "images": ["file:///path/to/your/pic"],
     "opacity": 0.91,
     "size": "cover",
     "position": "center",
     "interval": 0
 },
-"background.style": {
+"background.editor": {
     "background-position": "100% 100%",
     "background-size": "cover",
     "opacity": 0.18
 },
-"background.customImages": [
-    "file:///path/to/pic"
-],
 ```
 
 Additionally, avoid your comment color to be green-like.
