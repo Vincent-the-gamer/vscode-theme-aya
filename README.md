@@ -70,8 +70,8 @@ Please use [Background](https://github.com/shalldie/vscode-background) extension
 Download pic from the top of this document, then add these codes to `settings.json`.
 ```json
 "background.fullscreen": {
-    "images": ["file:///path/to/your/pic"],
-    "opacity": 0.91,
+    "images": ["file:///path/to/pic"],
+    "opacity": 0.18,
     "size": "cover",
     "position": "center",
     "interval": 0
