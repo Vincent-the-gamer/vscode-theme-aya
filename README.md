@@ -20,14 +20,15 @@
 <a href="https://marketplace.visualstudio.com/items?itemName=vincent-the-gamer.aya" target="__blank"><img src="https://img.shields.io/visual-studio-marketplace/v/vincent-the-gamer.aya.svg?color=violet&amp;label=VS%20Code%20Marketplace&logo=visual-studio-code" alt="Visual Studio Marketplace Version" /></a>
 </p>
 
-
 ## Description
-[Aya(綾)](https://senren.nekonyansoft.com/chara.html) is one of the main characters in game [「Senren * Banka」](https://store.steampowered.com/app/1144400/SenrenBanka/).
+
+[Aya(綾)](https://senren.nekonyansoft.com/chara.html) is one of the main characters in game [「Senren \* Banka」](https://store.steampowered.com/app/1144400/SenrenBanka/).
 
 She is generally called Murasame(ムラサメ) in the game, Aya(綾) is her real name.
 
 ## Aya Bladelight
-This extension has bundled [Custom CSS and JS Loader](https://github.com/be5invis/vscode-custom-css). So you can simply get the glow effect and new startup logo showed in preview, just follow these steps:
+
+This extension has bundled [Aya CSS and JS Loader](https://github.com/be5invis/vscode-custom-css). So you can simply get the glow effect and new startup logo showed in preview, just follow these steps:
 
 1. Setup the path to `bladelight.css` in `settings.json`.
 
@@ -42,7 +43,8 @@ macOS:
 ],
 ```
 
-Windows: 
+Windows:
+
 ```json
 "aya.imports": [
     "file://C:/Users/{USER_NAME}/.vscode/extensions/vincent-the-gamer.aya-{plugin-version}/bladelight.css"
@@ -58,6 +60,7 @@ Linux:
 ```
 
 2. Run `Enable Aya Bladelight`.
+
 - `Ctrl + Shift + P` or `Command + Shift + P`
 - Input `enable aya bladelight`
 - P.S. Disable it by running `Disable Aya Bladelight`
@@ -65,12 +68,14 @@ Linux:
 And happy hacking~~~ ☆´∀｀☆
 
 ## Add a background image
+
 Please use [Background](https://github.com/shalldie/vscode-background) extension.
 
 Download pic from the top of this document, then add these codes to `settings.json`.
+
 ```json
 "background.fullscreen": {
-    "images": ["file:///path/to/pic"],
+    "images": ["/path/to/pic"],
     "opacity": 0.18,
     "size": "cover",
     "position": "center",
@@ -84,6 +89,7 @@ Download pic from the top of this document, then add these codes to `settings.js
 ```
 
 Additionally, avoid your comment color to be green-like.
+
 ```json
 "editor.tokenColorCustomizations": {
     "comments": {
@@ -96,10 +102,24 @@ Additionally, avoid your comment color to be green-like.
 Then your Code will look like my preview pic.
 
 ## Preview
+
 Enable Aya Bladelight to get the glow effect and custom logo.
 
-![preview](./.github/preview.png)
-![preview2](./.github/preview-2.png)
+### Normal + Light
+
+![aya-light](./.github/aya-light.png)
+
+### Normal + Dark
+
+![aya-dark](./.github/aya-dark.png)
+
+### Glowing + Light
+
+![aya-light-glowing](./.github/light-glowing.png)
+
+### Glowing + Dark
+
+![aya-dark-glowing](./.github/dark-glowing.png)
 
 ## License
 

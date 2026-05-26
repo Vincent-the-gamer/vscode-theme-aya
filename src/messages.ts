@@ -1,5 +1,5 @@
 export default {
-    admin: "Run VS Code with admin privileges so the changes can be applied.",
+	admin: "Run VS Code with admin privileges so the changes can be applied.",
 	enabled:
 		"Aya Bladelight enabled. Restart to take effect. " +
 		"If Code complains about it is corrupted, CLICK DON'T SHOW AGAIN. " +
@@ -14,5 +14,7 @@ export default {
 		'Please set "aya.imports" in your user settings.',
 	reloadAfterVersionUpgrade:
 		"Detected reloading CSS / JS after VSCode is upgraded. " + "Performing application only.",
-	cannotLoad: (url: string) => `Cannot load '${url}'. Skipping.`
-}
+	unableToLocateVsCodeInstallationPath:
+		"Unable to locate VS Code installation path. Aya Bladelight cannot be activated.",
+	cannotLoad: (url: string) => `Cannot load '${url}'. Skipping.`,
+};

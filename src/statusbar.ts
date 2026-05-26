@@ -1,4 +1,5 @@
 // @ts-nocheck
+/* eslint-env browser */
 (function () {
 	function patch() {
 		const e1 = document.querySelector(".right-items");
@@ -11,7 +12,7 @@
 			{
 				const a = document.createElement("a");
 				a.tabIndex = -1;
-				a.className = 'statusbar-item-label';
+				a.className = "statusbar-item-label";
 				{
 					const span = document.createElement("span");
 					span.className = "codicon codicon-paintcan";

@@ -1,8 +1,9 @@
 {
+  "type": "commonjs",
   "publisher": "vincent-the-gamer",
   "name": "aya",
   "displayName": "Aya",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Murasame-style VSCode Theme.",
   "author": "Vincent-the-gamer",
   "license": "MIT",
@@ -20,16 +21,13 @@
     "murasame",
     "theme"
   ],
-  "sponsor": {
-    "url": "https://afdian.net/a/vince-g"
-  },
   "categories": [
     "Themes"
   ],
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
   "icon": "resources/icon.png",
   "engines": {
-    "vscode": "^1.99.1"
+    "vscode": "^1.120.0"
   },
   "contributes": {
     "themes": [
@@ -62,7 +60,7 @@
       "title": "Aya Bladelight Configuration",
       "properties": {
         "aya.imports": {
-          "description": "CSS/JS files, as an array of URLs, not file paths",
+          "description": "CSS/JS files to import, as an array of URLs or file paths",
           "type": "array",
           "default": []
         },
@@ -70,11 +68,6 @@
           "description": "Enable Status Indicator",
           "type": "boolean",
           "default": true
-        },
-        "aya.staging_dir": {
-          "description": "Directory used for storing staged CSS/JS files. Must be inside VSCode's extension directory, otherwise VSCode will refuse to load the your custom CSS/JS.",
-          "type": "string",
-          "default": ""
         }
       }
     }
@@ -83,22 +76,23 @@
     "login:vsce": "vsce login vincent-the-gamer",
     "logout:vsce": "vsce logout vincent-the-gamer",
     "login:npm": "pnpm login --registry https://registry.npmjs.com",
-    "build": "tsup",
+    "build": "tsdown --config-loader tsx",
     "publish": "vsce publish",
     "pack": "vsce package",
-    "dep": "taze major"
+    "dep": "taze major -I"
   },
   "devDependencies": {
-    "@types/node": "^22.15.17",
-    "@types/vscode": "^1.99.1",
-    "@vscode/vsce": "^3.3.2",
-    "taze": "^19.0.4",
-    "tsup": "^8.4.0",
-    "typescript": "^5.8.3"
+    "@types/node": "^25.9.1",
+    "@types/vscode": "^1.120.0",
+    "@vscode/vsce": "^3.9.1",
+    "taze": "^19.14.1",
+    "tsdown": "^0.22.0",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3"
   },
   "dependencies": {
     "file-url": "^4.0.0",
-    "node-fetch": "^2.7.0",
-    "uuid": "^11.1.0"
+    "node-fetch": "^3.3.2",
+    "uuid": "^14.0.0"
   }
 }
