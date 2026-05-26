@@ -103,7 +103,7 @@ Then your Code will look like my preview pic.
 
 ## Preview
 
-Enable Aya Bladelight to get the glow effect and custom logo.
+Enable Aya Bladelight to get the glow effect.
 
 ### Normal + Light
 
